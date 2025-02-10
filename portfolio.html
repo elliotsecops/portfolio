@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliot Palacios - Cybersecurity Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3, p, li, a {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(to right, #001f3f, #003366);
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .skill-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .skill-badge:hover {
+            transform: translateY(-2px);
+        }
+
+        main {
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #001f3f;
+            border-bottom: 2px solid #001f3f;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            color: #001f3f;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .project p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .project a {
+            display: inline-block;
+            background-color: #001f3f;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .project a:hover {
+            background-color: #003366;
+        }
+
+        .certifications {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .cert-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #001f3f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .project {
+                padding: 20px;
+            }
+
+            .skills {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elliot G. Palacios</h1>
+        <p>Cybersecurity Engineer | Cloud Security | DevSecOps</p>
+        <div class="skills">
+            <span class="skill-badge">Go</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">Kubernetes</span>
+            <span class="skill-badge">Cloud Security</span>
+            <span class="skill-badge">DevSecOps</span>
+            <span class="skill-badge">Penetration Testing</span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Passionate cybersecurity professional specializing in security engineering, penetration testing, and cloud security. I excel at developing innovative security tools and implementing robust security solutions that protect critical infrastructure and data. My expertise spans container security, API protection, and automated security testing.</p>
+            <p>Open to remote collaborations on challenging security projects with organizations seeking to enhance their cybersecurity posture.</p>
+        </section>
+
+        <section>
+            <h2>Technical Projects</h2>
+            <article class="project">
+                <h3>🛡️ Docker Security Scanner</h3>
+                <p>Developed a powerful Docker security scanner in Go that proactively identifies security vulnerabilities in container environments. The tool detects critical security issues such as containers running with root privileges and exposed ports, helping organizations prevent privilege escalation attacks and reduce their attack surface.</p>
+                <a href="https://github.com/elliotsecops/Docker-Security-Scanner" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="project">
+                <h3>🔒 Secure-Fortress-Linux</h3>
+                <p>Created an automated Linux hardening solution using Ansible and Wazuh that reduced server configuration time by 70%. Implemented comprehensive real-time security monitoring and automated security controls across 50+ Linux servers, significantly improving the organization's security posture.</p>
+                <a href="https://github.com/elliotsecops/Secure-Fortress-Linux" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="project">
+                <h3>🔍 API Security Scanner</h3>
+                <p>Developed a sophisticated API security testing tool that discovered 10 critical vulnerabilities in production APIs. The automated scanner detects various security issues including code injection, SSRF, and sensitive data exposure, reducing manual testing time by 50% while improving coverage.</p>
+                <a href="https://github.com/elliotsecops/APISecurity-Scanner" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <div class="cert-card">
+                    <h3>Google Cloud Computing</h3>
+                    <p>Foundations Certificate</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Cisco Cybersecurity</h3>
+                    <p>Certified Analyst</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Cisco Ethical Hacker</h3>
+                    <p>Certified Professional</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contact</h2>
+        <p>Email: elliotsecops@protonmail.com</p>
+        <p>
+            <a href="https://github.com/elliotsecops" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="https://www.linkedin.com/in/elliot-palacios-556462268/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
